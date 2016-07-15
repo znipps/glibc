@@ -311,6 +311,9 @@ CFLAGS-libm-test-support-double.c = $(libm-test-no-inline-cflags)
 CFLAGS-test-ldouble.c = $(libm-test-no-inline-cflags)
 CFLAGS-test-ldouble-finite.c = $(libm-test-finite-cflags)
 CFLAGS-libm-test-support-ldouble.c = $(libm-test-no-inline-cflags)
+CFLAGS-test-float128.c = $(libm-test-no-inline-cflags)
+CFLAGS-test-float128-finite.c = $(libm-test-finite-cflags)
+CFLAGS-libm-test-support-float128.c = $(libm-test-no-inline-cflags)
 CFLAGS-test-tgmath.c = -fno-builtin
 # The following testcase uses very long lines (>3 million), so it may take a
 # while to compile it. See: http://llvm.org/bugs/show_bug.cgi?id=14106 and
@@ -323,6 +326,7 @@ CFLAGS-test-snan.c = -fsignaling-nans
 CFLAGS-test-ifloat.c = $(libm-test-fast-math-cflags)
 CFLAGS-test-idouble.c = $(libm-test-fast-math-cflags)
 CFLAGS-test-ildouble.c = $(libm-test-fast-math-cflags)
+CPPFLAGS-test-ifloat128.c = $(libm-test-fast-math-cflags)
 
 CFLAGS-test-signgam-finite.c = -ffinite-math-only
 CFLAGS-test-signgam-finite-c99.c = -ffinite-math-only -std=c99
@@ -399,6 +403,10 @@ $(addprefix $(objpfx),\
 $(addprefix $(objpfx),\
 	    $(filter test-ldouble% test-ildouble%,\
 		     $(libm-tests))): $(objpfx)libm-test-support-ldouble.o
+
+$(addprefix $(objpfx),\
+	    $(filter test-float128% test-ifloat128%,\
+		     $(libm-tests))): $(objpfx)libm-test-support-float128.o
 
 # Run the math programs to automatically generate ULPs files.
 .PHONY: regen-ulps

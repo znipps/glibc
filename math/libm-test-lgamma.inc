@@ -43,8 +43,10 @@ lgamma_test (void)
 static void
 gamma_test (void)
 {
+#if !TEST_FLOATN
   /* gamma uses the same test data as lgamma.  */
   ALL_RM_TEST (gamma, 0, lgamma_test_data, RUN_TEST_LOOP_f_f1, END, signgam);
+#endif
 }
 
 /*
