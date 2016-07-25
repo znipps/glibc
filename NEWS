@@ -108,6 +108,10 @@ Version 2.25
 * The function strfromf128, from ISO/IEC TS 18661-3:2014, is added to libc.  It
   converts a _Float128 value into string.
 
+* The functions strtof128, from ISO/IEC TS 18661-3:2014, is added to libc.  It
+  converts a string into a floating-point number of _Float128 type.  Its wide
+  character counterpart, wsctof128, is added as a GNU extension.
+
 * Most of glibc can now be built with the stack smashing protector enabled.
   It is recommended to build glibc with --enable-stack-protector=strong.
   Implemented by Nick Alcock (Oracle).
