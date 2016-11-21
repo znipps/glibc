@@ -9667,7 +9667,6 @@ hr.po
 libc.pot
 ko.po
 ru.po
-extra-modules.mk
 intl
 tst-gettext4-fr.po
 tstcodeset.po
