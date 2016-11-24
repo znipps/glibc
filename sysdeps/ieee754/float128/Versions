@@ -29,6 +29,7 @@ libm {
     cabsf128;
     cacosf128;
     cacoshf128;
+    canonicalizef128;
     cargf128;
     casinf128;
     casinhf128;
