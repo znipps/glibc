@@ -101,6 +101,7 @@ libm {
     scalblnf128;
     scalbnf128;
     setpayloadf128;
+    setpayloadsigf128;
     sincosf128;
     sinf128;
     sinhf128;
