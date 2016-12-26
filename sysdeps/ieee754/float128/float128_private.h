@@ -292,6 +292,7 @@ typedef __float128 _Float128;
 #define nextupl nextupf128
 #define remquol remquof128
 #define rintl rintf128
+#define roundevenl roundevenf128
 #define roundl roundf128
 #define scalbnl scalbnf128
 #define signbitl signbitf128
