@@ -269,6 +269,8 @@ typedef __float128 _Float128;
 #define fmal fmaf128
 #define fmaxl fmaxf128
 #define fminl fminf128
+#define fromfpl fromfpf128
+#define fromfpxl fromfpxf128
 #define fpclassifyl fpclassifyf128
 #define frexpl frexpf128
 #define gammal_r_finite gammaf128_r_finite
@@ -304,6 +306,8 @@ typedef __float128 _Float128;
 #define totalorderl totalorderf128
 #define totalordermagl totalordermagf128
 #define truncl truncf128
+#define ufromfpl ufromfpf128
+#define ufromfpxl ufromfpxf128
 
 
 /* misc internal renames.  */

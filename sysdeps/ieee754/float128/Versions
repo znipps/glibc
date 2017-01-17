@@ -71,6 +71,8 @@ libm {
     fminmagf128;
     fmodf128;
     frexpf128;
+    fromfpf128;
+    fromfpxf128;
     getpayloadf128;
     hypotf128;
     ilogbf128;
@@ -116,6 +118,8 @@ libm {
     totalorderf128;
     totalordermagf128;
     truncf128;
+    ufromfpf128;
+    ufromfpxf128;
     y0f128;
     y1f128;
     ynf128;
