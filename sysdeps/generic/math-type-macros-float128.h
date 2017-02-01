@@ -46,4 +46,7 @@
 # define __builtin_nanf128 __builtin_nanq
 #endif
 
+/* Use the type-generic wrapper templates.  */
+#define __USE_WRAPPER_TEMPLATE 1
+
 #endif
