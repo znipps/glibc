@@ -378,7 +378,7 @@ $(addprefix $(objpfx), $(libm-tests.o)): $(addprefix $(objpfx),\
 						     $(libm-tests-generated))
 
 $(addprefix $(objpfx),\
-	    $(filter test-float% test-ifloat%,\
+	    $(filter test-float test-ifloat test-float-% test-ifloat-%,\
 		     $(libm-tests))): $(objpfx)libm-test-support-float.o
 
 $(addprefix $(objpfx),\
